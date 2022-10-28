@@ -2,37 +2,47 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand {
+  margin-left: 50px;
+  /* margin-block: 10px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link {  /* Adding margins between the navbar links */
+  margin: 20px;
+}  
+
+li a:hover {
+  background-color: #111;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav { /* Adding rounded corners to the navbar */
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: rgb(95, 94, 94);  
+  border-width: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*
+  Using css below to add different shades to the card
+*/
+.card-header {
+  background-color: rgb(51, 165, 165);
+}
+
+.card-footer {  
+  background-color: rgb(51, 165, 165);
+}
+
+.card-body {
+  background-color: rgb(109, 169, 169);  
+}
+
+input:hover {  /* Adding the pointer cursor to the input fields */
+  cursor: pointer;
 }
